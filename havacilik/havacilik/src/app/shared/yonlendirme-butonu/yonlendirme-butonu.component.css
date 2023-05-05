@@ -1,0 +1,22 @@
+.buton{
+  border:1px solid black !important;
+  background-color: white;
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  transition: background-color 0.25s;
+}
+
+.buton:hover{
+  background-color: black;
+  color: white;
+  border:2px solid black;
+}
+
+.buton:focus,
+.buton:active {
+  background-color: black;
+  transition: background-color 0.25s;
+}
