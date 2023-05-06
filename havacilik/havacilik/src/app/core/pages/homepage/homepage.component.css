@@ -1,0 +1,41 @@
+
+.mainTitle{
+    margin-left: 150px;
+    white-space: nowrap;
+    height:20px;
+   }
+   
+   .mainParagraph{
+     margin-top: 70px;
+     white-space: normal;
+     word-break: break-word;
+     margin-right: 150px;
+     margin-left: 30px;
+   }
+
+   .container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex;
+    border: 2px solid black;
+    max-width: 80%;
+    margin-left: 150px;
+  }
+  
+.homeimg{
+    float:right;
+    display: flex;
+    justify-content: flex-end;
+    width: 450px;
+    height: 450px;
+  }
+  
+ 
+    
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+  }
