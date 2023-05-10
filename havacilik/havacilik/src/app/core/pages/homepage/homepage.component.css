@@ -12,11 +12,13 @@
      margin-right: 150px;
      margin-left: 30px;
    }
-
+   
+ 
    .container {
-    display: flex;
-    justify-content: space-between;
-    justify-content: flex;
+    height:477px;
+      display: flex;
+      justify-content: space-between;
+      justify-content: flex;
     border: 2px solid black;
     max-width: 80%;
     margin-left: 150px;
@@ -28,14 +30,23 @@
     justify-content: flex-end;
     width: 450px;
     height: 450px;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
   }
-  
- 
-    
+  .homeimg.opened {
+    opacity: 0;
+    transition-duration: 600ms;
+}
   .wrapper{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-  
+    transition: opacity 400ms ease-in-out;
+    opacity: 1;
   }
+  .wrapper.opened {
+    opacity: 0;
+    transition-duration: 600ms;
+}
+ 
