@@ -21,4 +21,27 @@ export class HomepageComponent {
     this.carousel2=false
   }
 
+  autoClickCarouselButton() {
+    const buttons = document.getElementsByClassName('carousel-button');
+    const totalButtons = buttons.length;
+    let currentIndex = 0;
+  
+    setInterval(() => {
+      const activeButton = document.querySelector('.carousel-button ');
+  
+      if (activeButton) {
+        (activeButton as HTMLElement).blur(); // Remove focus
+      }
+  
+      setTimeout(() => {
+        (buttons[currentIndex] as HTMLElement).click();
+      }, 3000);
+  
+      currentIndex = (currentIndex + 1) % totalButtons;
+    }, 5000);
+  }
+
+  ngOnInit() {
+    this.autoClickCarouselButton();
+  }
 }

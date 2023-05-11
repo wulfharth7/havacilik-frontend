@@ -4,7 +4,7 @@ import {MatButtonModule} from '@angular/material/button'
 import { HeaderComponent } from './header/header.component';
 import { YonlendirmeButonuComponent } from '../shared/yonlendirme-butonu/yonlendirme-butonu.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
-
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -15,6 +15,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
   imports: [
     CommonModule,
     MatButtonModule,
+    ButtonModule
   ],
   exports:[
     HomepageComponent
