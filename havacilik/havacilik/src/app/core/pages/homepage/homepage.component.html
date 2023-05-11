@@ -5,17 +5,17 @@
      </h1>
   </div>
   <div class="container">
-    <div class="wrapper" [class.opened]="carousel1">
-      <h1 class="mainParagraph" style="font-family: 'Nunito Sans'; font-size: 19px">
+    <div class="wrapper"  [class.opened]="carousel1">
+      <h1 class="mainParagraph" style="font-family: 'Nunito Sans'; font-size: 19px;">
         Yamaç paraşütü deneyimini Gazi Havacılık'ta tatmaktan daha güzel ne olabilir ki? Neler yaptığımızı merak ediyorsanız etkinliklerimize bir göz atın!
       </h1>
-      <app-yonlendirme-butonu [buttonText]="'Blog\'umuza göz atın!'" style="margin-left: 30px"></app-yonlendirme-butonu>
+      <app-yonlendirme-butonu [buttonText]="'Blog\'umuza göz atın!'" style="margin-left: 75px;"></app-yonlendirme-butonu>
     </div>
-    <div>
-      <img class="homeimg" [class.opened]="carousel1" src="../../../assets/dob.jpg" alt="Mountain">
-    </div>
-    <div class="wrapper" [class.opened]="carousel2">
-      asdasdasdasd
+      <div>
+        <img class="homeimg" [class.opened]="carousel1" src="../../../assets/dob.jpg" alt="Mountain">
+      </div>  
+    <div class="wrapper" style="position:absolute" [class.opened]="carousel2">
+       <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
     </div>
     
 
@@ -23,5 +23,6 @@
       <button (click)="carousel1Button()" class="carousel-button" autofocus></button>
       <button (click)="carousel2Button()" class="carousel-button"></button>
     </div>
-  </div>
   
+  </div>
+ 

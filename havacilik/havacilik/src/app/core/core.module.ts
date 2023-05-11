@@ -5,12 +5,14 @@ import { HeaderComponent } from './header/header.component';
 import { YonlendirmeButonuComponent } from '../shared/yonlendirme-butonu/yonlendirme-butonu.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ButtonModule } from 'primeng/button';
+import { PictureCardsComponent } from '../shared/picture-cards/picture-cards.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     HomepageComponent,
-    YonlendirmeButonuComponent
+    YonlendirmeButonuComponent,
+    PictureCardsComponent
   ],
   imports: [
     CommonModule,

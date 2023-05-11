@@ -1,5 +1,4 @@
 import { Component, ViewChild } from '@angular/core';
-import {style, state, animate, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-homepage',
@@ -25,6 +24,13 @@ export class HomepageComponent {
     const buttons = document.getElementsByClassName('carousel-button') as HTMLCollectionOf<HTMLElement>;
     const totalButtons = buttons.length;
     let currentIndex = 0;
+  
+    // Add event listener for keydown event
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Tab') {
+        event.preventDefault(); // Prevent the default Tab behavior
+      }
+    });
   
     setInterval(() => {
       const activeButton = document.querySelector('.carousel-button.focus') as HTMLElement;
