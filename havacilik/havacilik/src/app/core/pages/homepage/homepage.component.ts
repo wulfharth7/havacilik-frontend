@@ -22,24 +22,27 @@ export class HomepageComponent {
   }
 
   autoClickCarouselButton() {
-    const buttons = document.getElementsByClassName('carousel-button');
+    const buttons = document.getElementsByClassName('carousel-button') as HTMLCollectionOf<HTMLElement>;
     const totalButtons = buttons.length;
     let currentIndex = 0;
   
     setInterval(() => {
-      const activeButton = document.querySelector('.carousel-button ');
+      const activeButton = document.querySelector('.carousel-button.focus') as HTMLElement;
   
       if (activeButton) {
-        (activeButton as HTMLElement).blur(); // Remove focus
+        activeButton.classList.remove('focus'); // Remove focus from previous button
       }
   
       setTimeout(() => {
-        (buttons[currentIndex] as HTMLElement).click();
+        buttons[currentIndex].click();
+        buttons[currentIndex].focus(); // Trigger focus on current button
+        buttons[currentIndex].classList.add('focus'); // Add focus class to current button
       }, 3000);
   
       currentIndex = (currentIndex + 1) % totalButtons;
     }, 5000);
   }
+
 
   ngOnInit() {
     this.autoClickCarouselButton();
