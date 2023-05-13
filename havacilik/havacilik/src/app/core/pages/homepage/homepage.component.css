@@ -25,6 +25,8 @@
   position: relative;
   border-bottom: 2px solid black;
   border-right:  2px solid black;
+  overflow: hidden;
+  
 }
 .container::after {
   content: "";
@@ -59,10 +61,19 @@
   align-items: flex-start;
   transition: opacity 400ms ease-in-out;
   opacity: 1;
+  
 }
 .wrapper.opened {
   opacity: 0;
   transition-duration: 600ms;
+  overflow-y:hidden;
+}
+
+.pic-card-container {
+  width: 80%;
+  height: 100%;
+  border: 2px solid black
+  
 }
 .button-container {
   position: absolute;
