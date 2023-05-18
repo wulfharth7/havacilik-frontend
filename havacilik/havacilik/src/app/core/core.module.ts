@@ -6,18 +6,25 @@ import { YonlendirmeButonuComponent } from '../shared/yonlendirme-butonu/yonlend
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ButtonModule } from 'primeng/button';
 import { PictureCardsComponent } from '../shared/picture-cards/picture-cards.component';
+import { BilgiSistemiComponent } from './pages/bilgi-sistemi/bilgi-sistemi.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import { PasswordModule } from 'primeng/password';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     HomepageComponent,
     YonlendirmeButonuComponent,
-    PictureCardsComponent
+    PictureCardsComponent,
+    BilgiSistemiComponent
   ],
   imports: [
     CommonModule,
     MatButtonModule,
-    ButtonModule
+    ButtonModule,
+    InputTextModule,
+    FormsModule,PasswordModule
   ],
   exports:[
     HomepageComponent

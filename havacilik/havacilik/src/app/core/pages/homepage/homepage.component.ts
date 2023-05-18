@@ -53,4 +53,6 @@ export class HomepageComponent {
   ngOnInit() {
     this.autoClickCarouselButton();
   }
+
+  //https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1   FOR SMOOTH SCROLLING
 }

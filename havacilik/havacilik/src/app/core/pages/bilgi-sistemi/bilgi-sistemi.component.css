@@ -1,0 +1,75 @@
+.mainImage {
+    height: 98vh;
+    width: 100%; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    position:relative
+  }
+  .linkstyle {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .linkstyle:active i {
+    color: red;
+  }
+  .mainImage img {
+    height: 100%;
+    width: auto;
+    margin-right: 10px; /* Add some spacing between images */
+    animation: scroll 40s linear infinite alternate;
+    /* -webkit-filter: blur(2px); 
+	-moz-filter: blur(2px); 
+	-o-filter: blur(2px); 
+	-ms-filter: blur(2px); 
+	filter: blur(2px);  */
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Start at initial position */
+    }
+    100% {
+      transform: translateX(calc(-1000% - 100px)); /* Scroll to the right */
+    }
+  }
+
+.loginRegisterBox{
+    width: 950px;
+    height: 550px;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 2px solid rgb(99, 99, 241);
+    opacity:0.95;
+  }
+  
+.container{
+    position: relative;
+    height:98vh;
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+.paragraph{
+    z-index: 9;
+    position: absolute;
+    top: -65.5%;
+    left: 56.7%;
+    opacity:0.95;
+    font-family: 'Alfa Slab One';
+    font-size: 50px;
+    word-wrap: break-word; /* Add this line */
+}
+
+.loginBox{
+    width:450px;
+    height: 450px;
+    border:2px solid teal;
+    border-radius: 25px;
+    box-shadow: 60px -16px teal;
+}

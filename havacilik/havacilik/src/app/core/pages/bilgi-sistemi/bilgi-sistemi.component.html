@@ -1,0 +1,63 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sigmar&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Quicksand:wght@300&family=Sigmar&display=swap');
+  </style>
+
+<div class="container">
+    <div class="mainImage" style="overflow-x: auto;" >
+        <img src="../../../../assets/tepe.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/berke.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/kopek.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/za.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/baris.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/koza.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/yk.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/usame.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/tulumba.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/havuc.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/baris2.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/gizemli-portalak.jpeg" alt="Italian Trulli">
+        <img src="../../../../assets/uyku.jpeg" alt="Italian Trulli">
+    </div>
+    <div class="loginRegisterBox mainImage">
+        <div class="loginBox">
+           <p style="font-family: Quicksand; margin-left: 20px; margin-top: 60px;">E-mail</p> 
+           <input style=" margin-left: 20px;"type="text" pInputText [(ngModel)]="email" />
+           <p style="font-family: Quicksand; margin-left: 20px; margin-top: 40px;">Password</p> 
+           <span class="p-float-label">
+            <p-password  style=" margin-left: 20px;"[(ngModel)]="password" [feedback]="false"></p-password>
+            </span>
+            <div  style="margin-left: 20px; margin-top: 20px;">
+                <app-yonlendirme-butonu [buttonText]="'Giriş Yap'"></app-yonlendirme-butonu>
+            </div>
+            <div  style="margin-left: 20px; margin-top: 20px; align-items: center;flex-direction: row; display: flex;">
+                <p style="font-family: Quicksand;  margin-top: 60px; margin-right: 220px; text-decoration: underline;">Kayıt ol.</p> 
+                <p style="font-family: Quicksand;  margin-top: 60px; text-decoration: underline;">Şifremi Unuttum</p> 
+            </div>
+        
+        </div>
+        <div class="paragraph mainImage">
+            Gazi Havacılık.
+        </div>  
+        <div class="paragraph mainImage" style="font-family: 'Quicksand', sans-serif;top:-40%;font-size:30px">
+            Bizimle gökyüzünde uçmak<br> istemez misiniz?<br> <br> 
+        </div>  
+        <div class="paragraph mainImage" style="font-family: 'Quicksand', sans-serif;top:-20%;font-size:30px">
+            Bize katılın!
+            <div #iconContainer style="top:16%;left:-14%" class="mainImage">
+                <a href="http://www.localhost:4200/anasayfa" class="linkstyle">
+                    <i class="pi pi-arrow-circle-left" style="font-size: 2rem; margin-right: 330px;"></i>
+                </a>
+                <a href="https://www.instagram.com/gazihavacilik" class="linkstyle">
+                     <i class="pi pi-instagram" style="font-size: 2rem;"></i>
+                </a>
+            </div>
+        </div> 
+        
+    </div>    
+    
+</div>
+
+
+

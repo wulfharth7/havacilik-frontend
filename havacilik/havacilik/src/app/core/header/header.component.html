@@ -3,16 +3,16 @@
   @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@500&display=swap');
 </style>
-<div>
+<div >
   <header class="websiteHeader">
     <h1 class="headerTitle" style=" font-family:'Yaldevi', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">.:: Gazi Havacılık ::.</h1>
     <div class="button-container">
-      <app-yonlendirme-butonu class="butonlar"[buttonText]="'Anasayfa'"></app-yonlendirme-butonu>
+      <app-yonlendirme-butonu class="butonlar"[buttonText]="'Anasayfa'" (click)="clickButton('/anasayfa')"></app-yonlendirme-butonu>
       <app-yonlendirme-butonu class="butonlar"[buttonText]="'Hakkımızda'"></app-yonlendirme-butonu>
       <app-yonlendirme-butonu class="butonlar"[buttonText]="'Eğitim'"></app-yonlendirme-butonu>
       <app-yonlendirme-butonu class="butonlar"[buttonText]="'Tüzük'"></app-yonlendirme-butonu>
-      <app-yonlendirme-butonu class="butonlar"[buttonText]="'Bilgi Sistemi'"></app-yonlendirme-butonu>
-      <app-yonlendirme-butonu class="butonlar"[buttonText]="'Blog'"></app-yonlendirme-butonu>
+      <app-yonlendirme-butonu class="butonlar"[buttonText]="'Bilgi Sistemi'" (click)="clickButton('/bilgi-sistemi')"></app-yonlendirme-butonu>
+      <app-yonlendirme-butonu class="butonlar"[buttonText]="'Blog'" (click)="externalUrlRedirect()"></app-yonlendirme-butonu>
     </div>
    
   </header>
