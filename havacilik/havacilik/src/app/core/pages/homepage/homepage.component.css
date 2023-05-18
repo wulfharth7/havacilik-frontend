@@ -100,3 +100,12 @@
   background-color: black;
 }
  
+.homepageContainer{
+  position: absolute;
+  overflow-x: hidden;
+  top:63%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 1800px;
+    min-height: 500px;
+}

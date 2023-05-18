@@ -10,6 +10,7 @@ import { BilgiSistemiComponent } from './pages/bilgi-sistemi/bilgi-sistemi.compo
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import { PasswordModule } from 'primeng/password';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PasswordModule } from 'primeng/password';
     MatButtonModule,
     ButtonModule,
     InputTextModule,
-    FormsModule,PasswordModule
+    FormsModule,PasswordModule,
+    HttpClientModule
   ],
   exports:[
     HomepageComponent

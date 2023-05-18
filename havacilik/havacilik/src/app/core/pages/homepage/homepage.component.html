@@ -1,69 +1,71 @@
-<app-header></app-header>
-<div>
-    <h1 class='mainTitle'style="font-family: 'Comme'">
-      Gazi Havacılık.
-     </h1>
-  </div>
-  <div class="container">
-    <div class="wrapper"  [class.opened]="carousel1">
-      <h1 class="mainParagraph" style="font-family: 'Nunito Sans'; font-size: 19px;">
-        Yamaç paraşütü deneyimini Gazi Havacılık'ta tatmaktan daha güzel ne olabilir ki? Neler yaptığımızı merak ediyorsanız etkinliklerimize bir göz atın!
-      </h1>
-      <app-yonlendirme-butonu [buttonText]="'Blog\'umuza göz atın!'" style="margin-left: 75px;"></app-yonlendirme-butonu>
-    </div>
-      <div>
-        <img class="homeimg" [class.opened]="carousel1" src="../../../assets/dob.jpg" alt="Mountain">
-      </div>  
-
-    <div class="wrapper" [class.opened]="carousel2">
-      
-    </div>
-
-    <div class="button-container">
-      <button (click)="carousel1Button()" class="carousel-button" autofocus></button>
-      <button (click)="carousel2Button()" class="carousel-button"></button>
-    </div>
-  </div>
-
+<div class="homepageContainer">
+  <app-header></app-header>
   <div>
-    <p style="
-      font-family: 'Nunito Sans'; font-size: 25px;
-      text-align: center;
-      border-bottom:1px solid black;
-      padding-bottom: 5px;
-   ">
-    <strong>Eğitmenlerimiz</strong>
-   </p>
-   <div>
-    <div 
-    style="
-      position:absolute; 
-      align-items:center;
-      flex-direction:row;
-      display: flex; 
-      margin-left: 23%;
-      margin-top: 12px;
-      width: 100%;
-    ">
-       <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
-       <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
-       <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
-       <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
-       <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
+      <h1 class='mainTitle'style="font-family: 'Comme'">
+        Gazi Havacılık.
+       </h1>
     </div>
-   </div>
-  </div>
-
-  <div>
-    <p style="
-      font-family: 'Nunito Sans'; font-size: 25px;
-      text-align: center;
-      border-bottom:1px solid black;
-      padding-bottom: 5px;
-      margin-top: 310px;
-   ">
-    <strong>Albüm</strong>
-   </p>
-  </div>
-   
+    <div class="container">
+      <div class="wrapper"  [class.opened]="carousel1">
+        <h1 class="mainParagraph" style="font-family: 'Nunito Sans'; font-size: 19px;">
+          Yamaç paraşütü deneyimini Gazi Havacılık'ta tatmaktan daha güzel ne olabilir ki? Neler yaptığımızı merak ediyorsanız etkinliklerimize bir göz atın!
+        </h1>
+        <app-yonlendirme-butonu [buttonText]="'Blog\'umuza göz atın!'" style="margin-left: 75px;"></app-yonlendirme-butonu>
+      </div>
+        <div>
+          <img class="homeimg" [class.opened]="carousel1" src="../../../assets/dob.jpg" alt="Mountain">
+        </div>  
   
+      <div class="wrapper" [class.opened]="carousel2">
+        
+      </div>
+  
+      <div class="button-container">
+        <button (click)="carousel1Button()" class="carousel-button" autofocus></button>
+        <button (click)="carousel2Button()" class="carousel-button"></button>
+      </div>
+    </div>
+  
+    <div>
+      <p style="
+        font-family: 'Nunito Sans'; font-size: 25px;
+        text-align: center;
+        border-bottom:1px solid black;
+        padding-bottom: 5px;
+     ">
+      <strong>Eğitmenlerimiz</strong>
+     </p>
+     <div>
+      <div 
+      style="
+        position:absolute; 
+        align-items:center;
+        flex-direction:row;
+        display: flex; 
+        margin-left: 26.5%;
+        margin-top: 12px;
+        width: 100%;
+      ">
+         <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
+         <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
+         <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
+         <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
+         <app-picture-cards [sourceUri]="'../../../assets/mark.jpg'"></app-picture-cards>
+      </div>
+     </div>
+    </div>
+  
+    <div>
+      <p style="
+        font-family: 'Nunito Sans'; font-size: 25px;
+        text-align: center;
+        border-bottom:1px solid black;
+        padding-bottom: 5px;
+        margin-top: 310px;
+     ">
+      <strong>Albüm</strong>
+     </p>
+    </div>
+     
+    
+</div>
