@@ -12,6 +12,9 @@ export class BilgiSistemiComponent {
   password: string | undefined;
   backendurl = "https://backend-trial.vercel.app/users/login"
 
+  loginPageOpen: boolean=true;
+  registerPageOpen: boolean=false;
+
   constructor(private http: HttpClient) {
 
   }

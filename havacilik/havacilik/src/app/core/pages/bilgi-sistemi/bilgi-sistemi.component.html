@@ -25,7 +25,7 @@
         <img src="../../../../assets/alpetre.jpeg" alt="Italian Trulli">   
     </div>
     <div class="loginRegisterBox mainImage">
-        <div class="loginBox">
+        <div class="loginBox" [class.opened]="loginPageOpen">
            <p style="font-family: Quicksand; margin-left: 20px; margin-top: 60px;">E-mail</p> 
            <input style=" margin-left: 20px;"type="text" pInputText [(ngModel)]="email" />
            <p style="font-family: Quicksand; margin-left: 20px; margin-top: 40px;">Password</p> 
@@ -41,13 +41,13 @@
             </div>
         
         </div>
-        <div class="paragraph mainImage">
+        <div class="paragraph mainImage" [class.opened]="loginPageOpen">
             Gazi Havacılık.
         </div>  
-        <div class="paragraph mainImage" style="font-family: 'Quicksand', sans-serif;margin-top: -150px;font-size:30px">
+        <div class="paragraph mainImage" style="font-family: 'Quicksand', sans-serif;margin-top: -150px;font-size:30px" [class.opened]="loginPageOpen">
             Bizimle gökyüzünde uçmak<br> istemez misiniz?<br> <br> 
         </div>  
-        <div class="paragraph mainImage" style="font-family: 'Quicksand', sans-serif;margin-top: 100px; font-size:30px">
+        <div class="paragraph mainImage" style="font-family: 'Quicksand', sans-serif;margin-top: 100px; font-size:30px" [class.opened]="loginPageOpen">
             Bize katılın!
             <div #iconContainer style="margin-top: 290px; margin-right: 100px; margin-left: -140px; " class="mainImage">
                 <a href="http://www.localhost:4200/anasayfa" class="linkstyle">

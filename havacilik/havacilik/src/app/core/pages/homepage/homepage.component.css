@@ -1,111 +1,122 @@
 
-.mainTitle{
-  margin-left: 225px;
-  white-space: nowrap;
-  height:20px;
+@media only screen and (min-width:600px){
+  .mainTitle{
+    margin-left: 225px;
+    white-space: nowrap;
+    height:20px;
+   }
+   
+   .mainParagraph{
+    margin-top: 70px;
+    white-space: normal;
+    word-break: break-word;
+    margin-right: 150px;
+    margin-left: 75px;
+  }
+  
+ 
+ .container {
+   height:477px;
+   display: flex;
+   justify-content: space-between;
+   justify-content: flex;
+   /* border: 2px solid black; */
+   max-width: 80%;
+   margin-left: 150px;
+   position: relative;
+   border-bottom: 2px solid black;
+   border-right:  2px solid black;
+   overflow: hidden;
+   margin-bottom: 80px;
+ }
+ .container::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 0 0 50px 50px;
+   border-color: transparent transparent #868686 transparent;
  }
  
-.mainParagraph{
-   margin-top: 70px;
-   white-space: normal;
-   word-break: break-word;
-   margin-right: 150px;
+ .homeimg{
+   float:right;
+   display: flex;
+   justify-content: flex-end;
+   width: 450px;
+   height: 450px;
+   opacity: 1;
+   transition: opacity 400ms ease-in-out;
+ }
+ 
+ .homeimg.opened {
+   opacity: 0;
+   transition-duration: 600ms;
+ }
+ .wrapper{
+   display: flex; 
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   transition: opacity 400ms ease-in-out;
+   opacity: 1;
+   
+ }
+ .wrapper.opened {
+   opacity: 0;
+   transition-duration: 600ms;
+   overflow-y:hidden;
+ }
+ 
+ .pic-card-container {
+   width: 80%;
+   height: 100%;
+   border: 2px solid black
+   
+ }
+ .button-container {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   display: flex;
    margin-left: 75px;
  }
  
-
-.container {
-  height:477px;
-  display: flex;
-  justify-content: space-between;
-  justify-content: flex;
-  /* border: 2px solid black; */
-  max-width: 80%;
-  margin-left: 150px;
-  position: relative;
-  border-bottom: 2px solid black;
-  border-right:  2px solid black;
-  overflow: hidden;
-  margin-bottom: 80px;
-}
-.container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 50px 50px;
-  border-color: transparent transparent #868686 transparent;
-}
-
-.homeimg{
-  float:right;
-  display: flex;
-  justify-content: flex-end;
-  width: 450px;
-  height: 450px;
-  opacity: 1;
-  transition: opacity 400ms ease-in-out;
-}
-
-.homeimg.opened {
-  opacity: 0;
-  transition-duration: 600ms;
-}
-.wrapper{
-  display: flex; 
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  transition: opacity 400ms ease-in-out;
-  opacity: 1;
-  
-}
-.wrapper.opened {
-  opacity: 0;
-  transition-duration: 600ms;
-  overflow-y:hidden;
-}
-
-.pic-card-container {
-  width: 80%;
-  height: 100%;
-  border: 2px solid black
-  
-}
-.button-container {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  margin-left: 75px;
-}
-
-.carousel-button {
-  width: 10px;
-  border: 2px solid black;
-  background-color: white;
-  cursor: pointer;
-  height: 14px;
-  margin-bottom: 30px;
-  margin-right: 5px; /* Counteract the margin from the button container */
-  transition: background-color 0.26s;
-}
-
-.carousel-button:focus {
-  outline: none;
-  box-shadow: none; 
-  background-color: black;
-}
+ .carousel-button {
+   width: 10px;
+   border: 2px solid black;
+   background-color: white;
+   cursor: pointer;
+   height: 14px;
+   margin-bottom: 30px;
+   margin-right: 5px; /* Counteract the margin from the button container */
+   transition: background-color 0.26s;
+ }
  
-.homepageContainer{
-  position: absolute;
-  overflow-x: hidden;
-  top:63%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    width: 1800px;
-    min-height: 500px;
+ .carousel-button:focus {
+   outline: none;
+   box-shadow: none; 
+   background-color: black;
+ }
+  
+ .homepageContainer{
+   position: absolute;
+   overflow-x: hidden;
+   top:63%;
+     left: 52%;
+     transform: translate(-50%, -50%);
+     width: 1800px;
+     min-height: 500px;
+ }
 }
+
+@media only screen and (min-width:300px) and (max-width:1200px) {
+  .homepageContainer{
+    width:100vw;
+  }
+}
+
+
+ 
