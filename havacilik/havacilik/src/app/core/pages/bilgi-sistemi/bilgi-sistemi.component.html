@@ -24,8 +24,8 @@
         <img src="../../../../assets/denizli.jpeg" alt="Italian Trulli">
         <img src="../../../../assets/alpetre.jpeg" alt="Italian Trulli">   
     </div>
-    <div class="loginRegisterBox mainImage">
-        <div class="loginBox" [class.opened]="loginPageOpen">
+    <div class="loginRegisterBox mainImage" >
+        <div class="loginBox" [class.opened]="!loginPageOpen">
            <p style="font-family: Quicksand; margin-left: 20px; margin-top: 60px;">E-mail</p> 
            <input style=" margin-left: 20px;"type="text" pInputText [(ngModel)]="email" />
            <p style="font-family: Quicksand; margin-left: 20px; margin-top: 40px;">Password</p> 
@@ -35,19 +35,53 @@
             <div  style="margin-left: 20px; margin-top: 20px;">
                 <app-yonlendirme-butonu [buttonText]="'Giriş Yap'" (click)="loginToSystem()"></app-yonlendirme-butonu>
             </div>
-            <div  style="margin-left: 20px; margin-top: 20px; align-items: center;flex-direction: row; display: flex;">
-                <p style="font-family: Quicksand;  margin-top: 60px; margin-right: 220px; text-decoration: underline;">Kayıt ol.</p> 
-                <p style="font-family: Quicksand;  margin-top: 60px; text-decoration: underline;">Şifremi Unuttum</p> 
+            <div style="margin-left: 20px; margin-top: 20px; align-items: center;flex-direction: row; display: flex;">
+                <p style="font-family: Quicksand;  margin-top: 60px; margin-right: 220px; text-decoration: underline; cursor:pointer" (click)="openRegisterBox()"> Kayıt olun.</p> 
+                <p class="kek" style="font-family: Quicksand;  margin-top: 60px; text-decoration: underline; cursor:pointer">Şifremi Unuttum</p> 
             </div>
         
         </div>
+        <div class="registerBox" [class.opened]="!registerPageOpen">
+            <p style="font-family: Quicksand; margin-left: 25px; margin-top:10px; margin-bottom: -0px;">İsim</p> 
+            <input style="margin-left: 25px;"type="text" pInputText [(ngModel)]="isim" />
+
+            <p style="font-family: Quicksand; margin-left: 285px; margin-top:-56px; margin-bottom: -0px; " >Soyisim</p> 
+            <input style="margin-left: 285px;"type="text" pInputText [(ngModel)]="soyisim" />
+            <div>
+                <p style="font-family: Quicksand;margin-left: 285px; margin-bottom: -0px; ">Email</p> 
+                <input style=" margin-left: 285px;"type="text" pInputText [(ngModel)]="email"/>
+            </div>
+
+
+            <p style="font-family: Quicksand;margin-left: 25px; margin-bottom: -0px; margin-top: -56px;">Şifre</p> 
+            <span class="p-float-label" style=" margin-left: 25px; width: 200px;">
+            <p-password [(ngModel)]="password" [feedback]="false"></p-password>
+            </span>
+
+            <p style="font-family: Quicksand;margin-left: 25px; margin-bottom: -0px;">Şifreyi tekrar girin</p>
+            <span class="p-float-label" style=" margin-left: 25px; width: 200px;">
+            <p-password  [(ngModel)]="passwordCheck" [feedback]="false"></p-password>
+            </span>
+
+            <p style="font-family: Quicksand; margin-left: 285px; margin-top:-56px; margin-bottom: -0px; " >Davet Kodu</p> 
+            <input style="margin-left: 285px;"type="text" pInputText [(ngModel)]="soyisim" />
+
+            <div class="card flex justify-content-center" style="margin-left: 25px; margin-top:103px">
+                <p-dropdown [options]="genders" [(ngModel)]="selectedGender" optionLabel="name"></p-dropdown>
+            </div>
+            <div class="card flex justify-content-center" style="margin-left:285px; margin-top:-36px">
+                <p style="font-family: Quicksand;  margin-top:-40px; margin-bottom: -0px; " >Doğum Tarihi</p> 
+                <p-calendar [(ngModel)]="date" dateFormat="dd.mm.yy"></p-calendar>
+            </div>
+        </div>
+
         <div class="paragraph mainImage" [class.opened]="loginPageOpen">
             Gazi Havacılık.
         </div>  
-        <div class="paragraph mainImage" style="font-family: 'Quicksand', sans-serif;margin-top: -150px;font-size:30px" [class.opened]="loginPageOpen">
+        <div class="paragraph mainImage linkstyle" style="font-family: 'Quicksand', sans-serif;margin-top: -150px;font-size:30px" [class.opened]="loginPageOpen">
             Bizimle gökyüzünde uçmak<br> istemez misiniz?<br> <br> 
         </div>  
-        <div class="paragraph mainImage" style="font-family: 'Quicksand', sans-serif;margin-top: 100px; font-size:30px" [class.opened]="loginPageOpen">
+        <div class="paragraph mainImage linkstyle" style="font-family: 'Quicksand', sans-serif;margin-top: 100px; font-size:30px" [class.opened]="loginPageOpen">
             Bize katılın!
             <div #iconContainer style="margin-top: 290px; margin-right: 100px; margin-left: -140px; " class="mainImage">
                 <a href="http://www.localhost:4200/anasayfa" class="linkstyle">

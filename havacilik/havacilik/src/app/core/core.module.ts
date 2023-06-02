@@ -5,10 +5,11 @@ import { YonlendirmeButonuComponent } from '../shared/yonlendirme-butonu/yonlend
 import { ButtonModule } from 'primeng/button';import { PictureCardsComponent } from '../shared/picture-cards/picture-cards.component';
 import { BilgiSistemiComponent } from './pages/bilgi-sistemi/bilgi-sistemi.component';
 import { InputTextModule } from 'primeng/inputtext';
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';import { DropdownModule } from 'primeng/dropdown';
 import { PasswordModule } from 'primeng/password';
-import { HttpClientModule } from '@angular/common/http';
-import { LayoutModule } from '@angular/cdk/layout';
+import { HttpClientModule } from '@angular/common/http';import { CalendarModule } from 'primeng/calendar';
+import { LayoutModule } from '@angular/cdk/layout';import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +26,10 @@ import { LayoutModule } from '@angular/cdk/layout';
     InputTextModule,
     FormsModule,PasswordModule,
     HttpClientModule,
-    LayoutModule
+    LayoutModule,
+    DropdownModule,
+    BrowserAnimationsModule,
+    CalendarModule
   ],
   exports:[
     HomepageComponent

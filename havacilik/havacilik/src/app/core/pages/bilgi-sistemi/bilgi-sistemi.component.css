@@ -42,6 +42,7 @@
     border: 2px solid rgb(99, 99, 241);
     opacity:0.95;
   }
+ 
   
 .container{
     position: relative;
@@ -60,6 +61,20 @@
     font-size: 50px;
     word-wrap: break-word; /* Add this line */
 }
+.paragraph.opened{
+  display:none
+}
+
+.registerBox{
+   width:550px;
+    height: 450px;
+    border:2px solid teal;
+    border-radius: 25px;
+    box-shadow: 40px -16px teal;
+}
+.registerBox.opened{
+  display:none
+}
 
 .loginBox{
     width:450px;
@@ -67,4 +82,32 @@
     border:2px solid teal;
     border-radius: 25px;
     box-shadow: 60px -16px teal;
+}
+.loginBox.opened{
+  display:none
+}
+ 
+@media only screen and (max-width:640px){
+  .loginRegisterBox{
+    width: 340px;
+    margin-left: -75px;
+    overflow-x: hidden;
+    margin-top: -200px;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+  .loginBox{
+    width: 300px;
+    box-shadow: 18px -4px teal;;
+  }
+  .linkstyle{
+    display:none
+  }
+  .kek{
+    margin-left: -70px;
+    text-decoration: underline;
+  }
+  .paragraph{
+    display:none
+  }
 }
